@@ -18,8 +18,10 @@ int main() {
        int populacao1 = 650877;      // Corrigido para não ter ponto
        float area_km1 = 3538.0;      // área em km² da cidade
        float PIB1 = 47700.88;        //PIB da cidade
-       int numero_pontos_turisticos1 = 50;  //número de pontos turísticos da cidade
-   
+       int numero_pontos_turisticos1 = 50;  //número de pontos turísticos da cidade 
+       float Densidade_Populacional1 = (populacao1 / area_km1);  // Calculo densidade e PIB per capita
+       float PIB_perCapita1 = (PIB1 / populacao1);
+
     // Cadastro das Cartas: 
      printf("Carta 01\n");
 
@@ -36,7 +38,11 @@ int main() {
      printf("PIB: %.2f\n", PIB1);
 
      printf("Número de pontos turísticos: %d\n", numero_pontos_turisticos1);
-     printf("\n");       //para pular linha entre a carta 1 e carta 2
+
+     printf("Densidade populacional: %.2f\n", Densidade_Populacional1);
+
+     printf("PIB per Capita: %.2f\n", PIB_perCapita1);
+     printf("\n");    //para pular linha entre a carta 1 e carta 2
     
        //Carta 2
        char nome2[20] = "Mato Grosso";    //nome do estado
@@ -46,6 +52,9 @@ int main() {
        float area_km2 = 24499.922;      // área em km² da cidade
        float PIB2 = 438136155.50;        //PIB da cidade
        int numero_pontos_turisticos2 = 21;  //número de pontos turísticos da cidade
+       float Densidade_Populacional2 = (populacao2 / area_km2);  
+       float PIB_perCapita2 = (PIB2 / populacao2);  // Calculo densidade e PIB per capita
+
 
        //Cadrasto das cartas
        printf("Carta 02\n");
@@ -63,6 +72,10 @@ int main() {
        printf("PIB: %.2f\n", PIB2);
    
        printf("Número de pontos turísticos: %d\n", numero_pontos_turisticos2);
+
+       printf("Densidade populacional: %.2f\n", Densidade_Populacional2);
+
+       printf("PIB per Capita: %.2f\n", PIB_perCapita2);
    
 
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
